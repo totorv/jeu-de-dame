@@ -11,6 +11,13 @@ private :
 public:
 	Pion(bool _blanc,int X,int Y);
 	~Pion(void);
-	bool deplacerVers(int X,int Y,std::vector<Pion> liste);
+
+
+	int getx();
+	int gety();
+	bool estBlanc();
+
+	bool deplacerVers(int X,int Y,std::vector<Pion> &liste);
+
 };
 
