@@ -10,7 +10,7 @@ private :
 	bool blanc;
 public:
 	Pion(bool _blanc,int X,int Y);
-	~Pion(void);
+
 
 
 	int getx();
@@ -18,6 +18,7 @@ public:
 	bool estBlanc();
 
 	bool deplacerVers(int X,int Y,std::vector<Pion> &liste);
+
 
 };
 
