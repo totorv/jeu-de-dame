@@ -11,9 +11,7 @@ Pion::Pion(bool _blanc,int X,int Y) //blanc est vrai si le pion est blanc, faux 
 }
 
 
-Pion::~Pion(void)
-{
-}
+
 //verifie si le pion peut s'y déplacer (s'il y a déja un pion, celui-ci est supprimé )
 // renvoie vrai si le pion a été déplacé, faux sinon
 bool Pion::deplacerVers(int X,int Y,std::vector<Pion> & liste) 

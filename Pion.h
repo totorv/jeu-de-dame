@@ -12,7 +12,7 @@ public:
 	Pion(bool _blanc,int X,int Y);
 
 
-
+	
 	int getx();
 	int gety();
 	bool estBlanc();

@@ -3,4 +3,4 @@
 
 std::vector<Pion> intitListe();
 void demandeCoord(int* x,int *y);
-void dessinerPlateau(vector<Pion>);
+void dessinerPlateau(std::vector<Pion>);

@@ -4,7 +4,8 @@ using namespace std;
 
 std::vector<Pion> intitListe()//intialise la liste des pions
 {
-
+	std::vector<Pion> liste;
+	return liste;
 }
 
 
@@ -25,11 +26,11 @@ void dessinerPlateau(vector<Pion> liste)
 		for (int y=0;y<10;y++)
 		{
 			bool trouvé = false;
-			for (int z=0; z<liste.size();z++) //on regarde dans la liste de pion
+			for (int z=0; z<(int)liste.size();z++) //on regarde dans la liste de pion
 			{
 				if(liste[z].getx()==x && liste[z].gety()==y) //si un pion est sur cette case
 				{
-					if (liste[z].estBlanc==0) //on met la bonne lettre en fonction de la couleur
+					if (liste[z].estBlanc()==0) //on met la bonne lettre en fonction de la couleur
 					{
 						cout<<"B ";
 						trouvé = true;
@@ -46,3 +47,4 @@ void dessinerPlateau(vector<Pion> liste)
 		}
 		cout<<endl;
 	}
+}
