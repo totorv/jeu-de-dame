@@ -3,6 +3,9 @@
 #include "utils.h"
 #include  "gtest\gtest.h"
 
-TEST(allo,un){
-	EXPECT_EQ(1,1);
+TEST(EnDehorsDuPlateau,Deplacement){
+	Pion piontest(true,1,1);
+	std::vector<Pion> liste;
+	liste.push_back(piontest);
+	EXPECT_EQ(false,piontest.deplacerVers(-1,1,liste));
 }
