@@ -5,6 +5,26 @@ using namespace std;
 std::vector<Pion> intitListe()//intialise la liste des pions
 {
 	std::vector<Pion> liste;
+
+	//ajouts pions blancs
+	for (int x=0;x<4;x++)
+	{
+		for (int y=0;y<5;y++)
+		{
+			Pion pion = Pion(true,x,2*y+x%2);
+			liste.push_back(pion);
+		}
+	}
+
+	//ajouts pions noirs
+	for (int x=9;x>5;x--)
+	{
+		for (int y=0;y<5;y++)
+		{
+			Pion pion = Pion(false,x,2*y+x%2);
+			liste.push_back(pion);
+		}
+	}
 	return liste;
 }
 
@@ -23,6 +43,7 @@ void dessinerPlateau(vector<Pion> liste)
 	cout<<"  0 1 2 3 4 5 6 7 8 9"<<endl;
 	for (int x=0;x<10;x++) //pour chaque case du plateau
 	{
+		cout<<x<<" ";
 		for (int y=0;y<10;y++)
 		{
 			bool trouvé = false;
@@ -48,3 +69,4 @@ void dessinerPlateau(vector<Pion> liste)
 		cout<<endl;
 	}
 }
+
