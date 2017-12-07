@@ -63,7 +63,7 @@ void dessinerPlateau(vector<Pion> liste)
 					}
 				}
 			}
-			if(trouvé=false) //si pas de pion on laisse un vide
+			if(trouvé==false) //si pas de pion on laisse un vide
 				cout<<"  ";
 		}
 		cout<<endl;

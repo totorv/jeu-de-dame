@@ -16,11 +16,11 @@ Pion::Pion(bool _blanc,int X,int Y) //blanc est vrai si le pion est blanc, faux 
 // renvoie vrai si le pion a été déplacé, faux sinon
 bool Pion::deplacerVers(int X,int Y,std::vector<Pion> & liste) 
 {
-	if(X<1||X>8)
+	if(X<0||X>9)
 	{
 		return false;
 	}
-	if(Y<1||Y>8)
+	if(Y<0||Y>9)
 	{
 		return false;
 	}
