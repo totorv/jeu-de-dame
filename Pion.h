@@ -13,9 +13,9 @@ public:
 
 
 	
-	int getx();
-	int gety();
-	bool estBlanc();
+	int getx(){return x;};
+	int gety(){return y;};
+	bool estBlanc(){return blanc;};
 
 	bool deplacerVers(int X,int Y,std::vector<Pion> &liste);
 
