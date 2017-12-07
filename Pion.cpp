@@ -3,7 +3,7 @@
 
 
 
-Pion::Pion(bool _blanc,int X,int Y)
+Pion::Pion(bool _blanc,int X,int Y) //blanc est vrai si le pion est blanc, faux s'il est noir
 {
 	blanc=_blanc;
 	x=X;
